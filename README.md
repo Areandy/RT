@@ -5,6 +5,8 @@ A basic Ray Tracing program.
 
 Program runs with scene files, wich describes the **position** and **direction** of every element along with the **colors**, **textures**, **size** and **light sources**. You also can add **reflection** property to make a glossy looking surface (it goes from 0 beeing totaly difusse and 1 beeing complete mirror).
 
+Yot can use this figures: sphere, cone, culinder, plane and paraboloid.
+
 By cliking on the figure you may change it position by using the menu above.
 
 Program running on multy threads.

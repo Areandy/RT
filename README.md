@@ -3,9 +3,9 @@ Project from UNIT.Factory (School 42).
 
 A basic Ray Tracing program.
 
-Program runs with scene files, wich describes the position and direction of every element along with the colors, textures, size and light sources.
+Program runs with scene files, wich describes the **position** and **direction** of every element along with the **colors**, **textures**, **size** and **light sources**. You also can add **reflection** property to make a glossy looking surface (it goes from 0 beeing totaly difusse and 1 beeing complete mirror).
 
-By cliking on the figure you may change it position by useing the menu above.
+By cliking on the figure you may change it position by using the menu above.
 
 Program running on multy threads.
 
@@ -16,7 +16,7 @@ Go to the folder and write:
 ```c
 make
 ```
-Then use the ```RT``` with name of the fractal and quantity of recursion (default is 50):
+Then use the ```RT``` file with the scene file:
 ```c
 ./RT scenes/...
 ```

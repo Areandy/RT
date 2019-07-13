@@ -1,0 +1,73 @@
+PARAMS{
+	_width: 800
+	_height: 800
+	_fov: 70
+	_camera->ori: {0.0, 2.0, 10.0}
+	_camera->dir: {0.0, 0.0, 0.0}
+	_reflection_depth: 30
+}
+
+OBJECTS[6]{
+
+	cylinder{
+		_center: {3.0, 1.0, 0.4}
+		_radius: 2.0
+		_dir: {2.0, 1.0, 0.0}
+		_color: {0.0, 0.0, 255.0}
+		_specular: 80.0
+	}
+
+	paraboloid{
+		_center: {4.0, 4.0, -6.0}
+		_dir: {0.0, 1.0, 0.0}
+		_color: {255.0, 144.0, 60.0}
+		_specular: 1000
+		_height: 5
+		_scalar: 0.2
+	}
+
+	plane{
+		_center: {0.0, 0.0, -10.0}
+		_dir: {0.0, 0.0, -1.0}
+		_color: {122.0, 122.0, 122.0}
+		_radius: 0.0
+		_reflection: 0.0
+	}
+	
+	sphere{
+		_center: {-2.0, 3.0, 0.0}
+		_radius: 3
+		_color: {255.0, 0.0, 0.0}
+		_specular: 10.0
+	}
+
+	cone{
+		_center: {-7.0, 3.0, -7.0}
+		_angle: 0.5
+		_color: {255.0, 255.0, 0.0}
+		_specular: 1000.0
+	}
+
+	plane{
+		_center: {0.0, -2.0, 0.0}
+		_dir: {0.0, 1.0, 0.0}
+		_color: {74.0, 211.0, 184.0}
+	}
+}
+
+# type:  1 -> ambient, 2 -> point, 3 -> parallel
+LIGHT_SOURCES[2]{
+
+	light{
+		_origin: {0.0, 10.0, 20.0}
+		_intensity: 0.2
+		_type: 1
+	}
+
+	light{
+		_dir: {-1, 0.5, 0}
+		_intensity: 0.6
+		_type: 3
+	}
+
+}

@@ -1,0 +1,52 @@
+PARAMS{
+	_width: 1300
+	_height: 800
+	_fov: 50
+	_camera->ori: { 30.0, 2.9, -6.0 }
+	_camera->dir: { 0.0, -1.6, 0.0 }
+	_reflection_depth: 0
+}
+
+
+OBJECTS[3]{
+
+	sphere{
+		_center: {1.0, 0.0, -17.0}
+		_radius: 5.0
+		_color: {255.0, 255.01, 0.01}
+		_specular: 100.0
+		_texture: resources/andre.jpg
+	}
+
+	sphere{
+		_center: {1.0, 0.0, -6.0}
+		_radius: 5.0
+		_color: {255.0, 255.01, 0.01}
+		_specular: 100.0
+		_texture: resources/vova.jpg
+	}
+
+	sphere{
+		_center: {1.0, 0.0, 5.0}
+		_radius: 5.0
+		_color: {255.0, 255.01, 0.01}
+		_specular: 100.0
+		_texture: resources/max.jpg
+	}
+}
+
+LIGHT_SOURCES[2]{
+
+	light{
+		_dir: {0.0, 1.0, 0.0}
+		_intensity: 0.2
+		_type: 1
+	}
+
+	light{
+		_origin: {20.0, 20.0, 0.0}
+		_intensity: 0.8
+		_type: 2
+	}
+
+}

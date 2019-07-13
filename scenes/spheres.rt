@@ -1,0 +1,44 @@
+PARAMS{
+	_width: 1300
+	_height: 800
+	_fov: 50
+	_camera->ori: { 0.0, 2.9, 7.0 }
+	_camera->dir: { 0.0, 0.0, 0.0 }
+	_reflection_depth: 26
+}
+
+
+OBJECTS[2]{
+
+	sphere{
+		_center: {5.0, 0.0, 0.0}
+		_radius: 2.0
+		_color: {200.0, 222.0, 0.0}
+		_specular: 1000.0
+		_texture: resources/motivated.jpg
+	}
+
+	sphere{
+		_center: {1.0, 0.0, -12.0}
+		_radius: 10.0
+		_color: {255.0, 255.01, 0.01}
+		_specular: 100.0
+		_texture: resources/motivation.jpg
+	}
+}
+
+LIGHT_SOURCES[2]{
+
+	light{
+		_dir: {0.0, 1.0, 0.0}
+		_intensity: 0.2
+		_type: 1
+	}
+
+	light{
+		_origin: {0.0, 5.0, 10.0}
+		_intensity: 0.8
+		_type: 2
+	}
+
+}

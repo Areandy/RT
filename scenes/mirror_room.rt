@@ -1,0 +1,74 @@
+PARAMS{
+	_width: 1000
+	_height: 1000
+	_fov: 70
+	_camera->ori: {0.0, 0.0, 8.0}
+	_camera->dir: {0.0, 1.5, 0.0}
+	_reflection_depth: 20
+}
+
+OBJECTS[5]{
+
+	sphere{
+		_center: {0.0, 0.0, 3.0}
+		_radius: 1.0
+		_color: {1.0, 255.0, 1.0}
+		_specular: 10.0
+		_reflection: 0.0
+		_texture: resources/mars.jpg
+	}
+
+	plane{
+		_center: {0.0, -4.0, 0.0}
+		_dir: {0.0, 1.0, 0.0}
+		_color: {100.0, 100.0, 100.0}
+		_specular: 0.0
+		_radius: 14.0
+		_reflection: 0.9
+	}
+	
+	plane{
+		_center: {0.0, 4.0, 0.0}
+		_dir: {0.0, -1.0, 0.0}
+		_color: {100.0, 100.0, 100.0}
+		_specular: 0.0
+		_radius: 14.0
+		_reflection: 0.9
+	}
+
+	plane{
+		_center: {4.0, 0.0, 0.0}
+		_dir: {1.0, 0.0, 0.0}
+		_color: {100.0, 100.0, 100.0}
+		_specular: 0.0
+		_radius: 14.0
+		_reflection: 0.9
+	}
+	
+	plane{
+		_center: {-4.0, 0.0, 0.0}
+		_dir: {-1.0, 0.0, 0.0}
+		_color: {100.0, 100.0, 100.0}
+		_specular: 0.0
+		_radius: 14.0
+		_reflection: 0.9
+	}
+
+}
+
+
+LIGHT_SOURCES[2]{
+
+	light{
+		_origin: {0.0, 1.0, 0.0}
+		_intensity: 0.4
+		_type: 1
+	}
+
+	light{
+		_origin: {0.0, 0.0, 6.0}
+		_intensity: 0.6
+		_type: 2
+	}
+
+}
